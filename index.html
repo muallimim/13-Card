@@ -5,8 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
+    <style>
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            width: 20%;
+            border-radius: 10px;
+        }
+        .card:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .card>img{
+           width: 100%; 
+           border-radius: 10px 10px 0 0;
+        }
+        .container{
+            padding: 3px 5px;
+        }
+
+        .cards{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
 </head>
 <body>
-    
+
+<div class="cards">   
+   <div class="card">
+    <img src="images/john_doe.png" alt="John Doe">
+    <div class="container">
+        <h4>John Doe</h4>
+        <p>Software Developer</p>
+    </div>
+   </div>
+
+   <div class="card">
+    <img src="images/jane_doe.png" alt="Jane Doe">
+    <div class="container">
+        <h4>Jane Doe</h4>
+        <p>Webpage Designer</p>
+    </div>
+   </div>
+</div> 
+
+
 </body>
 </html>
